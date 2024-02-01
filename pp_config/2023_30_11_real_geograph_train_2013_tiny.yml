@@ -1,0 +1,20 @@
+# Describe this dataset
+
+
+vars : [QBP,CLDLIQBP, CLDICEBP, TBP, PS, SOLIN, SHFLX, LHFLX,QBCTEND,CLDICEBCTEND,CLDLIQBCTEND,TBCTEND,NN2L_FLWDS,NN2L_DOWN_SW,NN2L_SOLL,NN2L_SOLLD,NN2L_SOLS,NN2L_SOLSD,PREC_CRM_SNOW,PREC_CRM,PRECTt-dt]
+
+
+in_dir : /work/bd1179/from_Mistral/bd1179/b381624/
+in_fns : CESM2_NN2_pelayout01_ens_07.cam.h1.2013-**-01-*****.nc
+
+out_dir: /work/bd1083/b309162/SPCESM_data/
+out_fn: 2013_train_1_year_tiny.nc
+
+shuffle:True
+
+val_in_fns: CESM2_NN2_pelayout01_ens_07.cam.h1.2014-**-01-*****.nc
+val_out_fn: 2014_val_1_year_tiny.nc
+
+
+
+real_geography: True
