@@ -27,7 +27,7 @@ The modified earth system model code is available at https://github.com/SciPritc
 
 ### Papers using this repository
 
-> G.Behrens, T. Beucler,F. Iglesias-Suarez, S. Yu, P. Gentine, M. Pritchard, M. Schwabe and V. Eyring, 2024.
+> G.Behrens, T. Beucler, F. Iglesias-Suarez, S. Yu, P. Gentine, M. Pritchard, M. Schwabe and V. Eyring, 2024.
 > Improving Atmospheric Processes in Earth System Models with Deep Learning Ensembles
 > and Stochastic Parameterizations
 
