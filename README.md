@@ -19,7 +19,7 @@ The current release of SPCESM2-ML ensemble on zenodo can be found here (to be up
 
 If you are looking for the exact version of the code that corresponds to the PNAS paper, check out this release: https://github.com/raspstephan/CBRAIN-CAM/releases/tag/PNAS_final [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1402384.svg)](https://doi.org/10.5281/zenodo.1402384)
 
-For a sample of the SPCESM data, prepocessed data and initilization files of CEM2 used, click here (to be updated): <![![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2559313.svg)](https://doi.org/10.5281/zenodo.2559313)>
+For a sample of the SPCESM data, prepocessed data and initilization files of CEM2 used, click here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10598576.svg)](https://doi.org/10.5281/zenodo.10598576)
 
 
 The modified earth system model code is available at https://github.com/SciPritchardLab/CESM2-ML-coupler . 
