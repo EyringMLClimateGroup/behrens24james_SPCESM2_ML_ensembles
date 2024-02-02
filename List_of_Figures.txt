@@ -1,0 +1,42 @@
+This list points to the script used for the presented Figures in the stochastic and deterministic ensmeble ML paper.
+
+Main paper:
+
+Fig1: summary schematic (no .py code needed)
+Fig2: Median coefficient of determination R² of the vertical profiles of specific humidity and temperature tendency for ensembles and individual models --> deterministic_analysis/real_geo_R_2_all_networks_updt.ipynb
+Fig3: Spread-Skill figure for specific humidity tendency, temperature tendency, cloud liquid water tendency and cloud ice water tendency of different ensembles --> uncertainty_quantification/real_geo_Spread_skill_diagrams_all_networks_updt.ipynb
+Fig4: Probability Integral Transform diagram of different ensembles for cloud liquid water tendency in the planetary boundary layer   --> uncertainty_quantification/real_geo_PIT_composite_all_networks_updt.ipynb
+Fig5: Mean continous rank probability score of ensembles for the vertical tendency profiles  --> CRPS_analysis/real_geo_CRPS_overview_updt.ipynb
+Fig6: Latitutude - Longitude Map of CRPS of different ensembles for cloud ice water tendency in the upper troposphere --> CRPS_analysis/real_geo_CRPS_lat_lon_plots.ipynb
+Fig7: Simulated zonal average of precipitation percentiles and histogram of different parameterizations inCESM2 simulations --> online_evaluation/global_analysis_online_ANN_lin_boost_precip_updt.ipynb
+Fig8: Latitude-Longitude plots of peak of diurnal precipitation in Local Solar Time --> online_evaluation/global_analysis_online_ANN_lin_boost_precip_updt.ipynb
+
+
+Supporting information:
+
+FigS1: Median coefficient of determination R² of the vertical profiles of cloud liquid water and and cloud ice water tendency for ensembles and individual models --> deterministic_analysis/real_geo_R_2_all_networks_updt.ipynb
+FigS2: Latitude - Longitude map of R² for specific humidity tendency in the plantary boundary layer for different ensembles and DNN 1 --> deterministic_analysis/real_geo_R_2_all_networks_updt.ipynb
+FigS3: Median coefficient of determination R2 for the remaining 8 2D SP output variables of different ensembles and individual models 
+variables --> deterministic_analysis/real_geo_R_2_all_networks_updt.ipynb
+FigS4: Median mean absolute error (MAE) for vertical profiles of specific humidity tendency, temperature tendency, cloud liquid water tendency and cloud ice water tendency of different ensembles and individual models  --> deterministic_analysis/real_geo_MAE_all_networks_update.ipynb
+FigS5: Median MAE for the remaining 8 2D SP output variables of different ensembles and individual models 
+variables --> deterministic_analysis/real_geo_MAE_all_networks_update.ipynb
+FigS6: Aggregated Continuous Rank Probability Score (CRPS) for different ensembles  --> CRPS_analysis/real_geo_CRPS_overview_updt.ipynb
+Fig S7: Latitude - Longitude Maps of CRPS for cloud liquid water tendency in the plantary boundary layer of ensmebles --> CRPS_analysis/real_geo_CRPS_lat_lon_plots.ipynb
+FigS8: Latitude - Longitude Maps of CRPS for surafce specific humidity tendency of ensembles  --> CRPS_analysis/real_geo_CRPS_lat_lon_plots.ipynb
+FigS9: Latitude - Longitude Maps of CRPS for surafce specific temperature tendency of ensembles  --> CRPS_analysis/real_geo_CRPS_lat_lon_plots.ipynb
+FigS10: Probability Integral Transform diagram of different ensembles for cloud ice water tendency in the upper troposphere   --> uncertainty_quantification/real_geo_PIT_composite_all_networks_updt.ipynb
+FigS11: Probability Integral Transform diagram of different ensembles for surface specific humidity tendencies   --> uncertainty_quantification/real_geo_PIT_composite_all_networks_updt.ipynb
+FigS12: Probability Integral Transform diagram of different ensembles for surface temperature tendencies   --> uncertainty_quantification/real_geo_PIT_composite_all_networks_updt.ipynb
+FigS13: CRPS vs. magnitude of static latent space perturbation \alpha --> latent_perturbation_tuning/Tuning_static_gaussian_noise_VED_1.ipynb
+FigS14: R² vs. magnitude of static latent space perturbation \alpha --> latent_perturbation_tuning/Tuning_static_gaussian_noise_VED_1.ipynb
+FigS15: (1-R²)+PIT_distance vs. magnitude of static latent space perturbation \alpha --> latent_perturbation_tuning/Tuning_static_gaussian_noise_VED_1.ipynb
+FigS16: Mean Root Mean Squared Error (RMSE) of specific humidity below 200 hPa of ensemble parameterizations and individual models in simulations with CESM2 --> online_evaluation/real_geo_ANN_boost_zonal_averages.ipynb
+FigS17: Mean Root Mean Squared Error (RMSE) of temperature below 200 hPa of ensemble parameterizations and individual models in simulations with CESM2 --> online_evaluation/real_geo_ANN_boost_zonal_averages.ipynb
+FigS18: Zonal mean temperature of ensemble parameterizations and benchmark paramaterizations in simulations with CESM2 --> online_evaluation/real_geo_ANN_boost_zonal_averages.ipynb
+FigS19: Zonal mean specific humidity of ensemble parameterizations and benchmark paramaterizations in simulations with CESM2 --> online_evaluation/real_geo_ANN_boost_zonal_averages.ipynb
+Fig20: Precipitation histograms of different parameterizations in simulations of CESM2 --> online_evaluation/global_analysis_online_ANN_lin_boost_precip_updt.ipynb
+Fig21: Latitude - Longitude plot of median precipitation of different parameterizations in simulations of CESM2 --> online_evaluation/global_analysis_online_ANN_lin_boost_precip_updt.ipynb
+Fig22: Selected regions for diurnal cycle analysis of precipitation in simulations of CESM2 --> online_evaluation/global_analysis_online_ANN_lin_boost_precip_updt.ipynb
+Fig23: Diurnal cycle of precipitation in selected regions in simulations of CESM2 --> online_evaluation/global_analysis_online_ANN_lin_boost_precip_updt.ipynb
+
