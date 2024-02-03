@@ -122,7 +122,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
        ```
        python training file
        ```
-     4.2) Transform all keras models with the conversion jupyter notebooks (*conversion*.py) into pytorch models (pytorch will be used for the rest of the offline evaluation)
+     4.2) Transform all keras models with the conversion jupyter notebooks (`*conversion*.py`) into pytorch models (pytorch will be used for the rest of the offline evaluation)
 
        
   5) Run the deterministic_analysis Jupyter notebooks with all trained networks, here you need again the test data sets
@@ -138,7 +138,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
   3) Adjust compilers of CESM2 to the used HPC
   4) Copy models/online_models folder containing FKB.txt files of ANNs and normalization files to HPC
      
-     4.1) If you want to use your trained ANNs, please use models/online_models/fkb_keras_convert.py to convert .h5 files into .txt files for FKB ([Fortran-Keras-Bridge](https://github.com/scientific-computing/FKB))
+     4.1) If you want to use your trained ANNs, please use `models/online_models/fkb_keras_convert.py` to convert .h5 files into .txt files for FKB ([Fortran-Keras-Bridge](https://github.com/scientific-computing/FKB))
         ```
         python fkb_keras_convert --weights_file ANN_*.h5 --output_file ANN_*.txt
         ```
@@ -162,7 +162,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
   8) Run the benchmark simulation of CESM2.1.3 with the Zhang-McLane convection scheme and the SP
      For SP the example run scripts can be used by commenting out the coupled variables of the ML scheme in the run scripts, then SP is fully used.
 
-  9) Run the dedicated Jupyter notebooks of the online_evaluation folder based on the output of the simulations of CESM2 with the ML and tradional schemes
+  9) Run the dedicated Jupyter notebooks of the `online_evaluation` folder based on the output of the simulations of CESM2 with the ML and tradional schemes
 
 ## License:
 
