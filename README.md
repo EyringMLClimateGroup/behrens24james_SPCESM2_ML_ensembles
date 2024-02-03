@@ -113,9 +113,9 @@ To reproduce the analysis and the results shown in this repository two conda / m
   4) Use the prepocessed example SPCESM2 data from zenodo or your own preprocessed SPCESM2 data for training all models
       
      4.1) Train all networks:
-       The repective training files of individual ANNs can be found in the folders:   models/offline_models/ANNs_lin/ANN_*
-       The repective training files of individual VEDs can be found in the folders:   models/offline_models/VEDs/VED_*
-       The repective training files of ANN_dropout can be found in the folders:  models/offline_models/ANN_dropout
+       The respective training files of individual ANNs can be found in the folders:   `models/offline_models/ANNs_lin/ANN_*`
+       The respective training files of individual VEDs can be found in the folders:   `models/offline_models/VEDs/VED_*`
+       The respective training files of ANN_dropout can be found in the folders:  `models/offline_models/ANN_dropout`
 
        For the training you need the preprocessed training, validation, test, normalization datasets and 1 single .nc file of SPCESM2 raw data to detrmine the vertical coordinate of the SPCESM2 model (variables hyai, hybi):
 
@@ -126,7 +126,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
 
        
   5) Run the deterministic_analysis Jupyter notebooks with all trained networks, here you need again the test data sets
-     5.1) For the VED-varying ensemble please use VED_1 and the alpha_1.npy array that can be found in folder ('latent_perturbation_tuning')
+     5.1) For the VED-varying ensemble please use VED_1 and the alpha_1.npy array that can be found in folder `latent_perturbation_tuning`
      
   6) Run the uncertainty_quantification Jupyter notebooks (again use VED_1 and alpha_1 forr VED_varying)
   7) Run the CRPS_analysis notebooks
@@ -154,7 +154,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
      ```
      use this in csh shell, the first command sets the runscript, the second one the used ANN in this case, the third one the initilization data of CESM2 run
 
-     To enable an efficient parallezization on the HPC the use of e.g, parallel is recommented [https://www.gnu.org/software/parallel/](https://www.gnu.org/software/parallel/).
+     To enable an efficient parallelization on the HPC the use of e.g, parallel is recommented [https://www.gnu.org/software/parallel/](https://www.gnu.org/software/parallel/).
 
 
 
