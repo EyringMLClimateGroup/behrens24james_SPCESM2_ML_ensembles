@@ -104,7 +104,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
   1) Build the mamba / conda environments detailed above
   2) Familiarize with the cbrain package with the quickstart guide that can be found here: https://github.com/raspstephan/CBRAIN-CAM/blob/master/quickstart.ipynb
   3) Download the data sets from zenodo :[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10598576.svg)](https://doi.org/10.5281/zenodo.10598576) or use raw SPCESM2 data
-    3.1)  if SPCESM2 raw data is used: preprocess the data with the `preprocessing_real_geography.py` file, example configuration files can be found in the folder `pp_config` for training , validation, test and normalizataion data:
+     3.1)  if SPCESM2 raw data is used: preprocess the data with the `preprocessing_real_geography.py` file, example configuration files can be found in the folder `pp_config` for training , validation, test and normalizataion data:
 
        ```
        python preprocessing_real_geography.py -c /pp_config/example_config_file.yml 
