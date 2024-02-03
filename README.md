@@ -104,12 +104,14 @@ To reproduce the analysis and the results shown in this repository two conda / m
   1) Build the mamba / conda environments detailed above
   2) Familiarize with the cbrain package with the quickstart guide that can be found here: https://github.com/raspstephan/CBRAIN-CAM/blob/master/quickstart.ipynb
   3) Download the data sets from zenodo :[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10598576.svg)](https://doi.org/10.5281/zenodo.10598576) or use raw SPCESM2 data
+     
      3.1)  if SPCESM2 raw data is used: preprocess the data with the `preprocessing_real_geography.py` file, example configuration files can be found in the folder `pp_config` for training , validation, test and normalizataion data:
 
        ```
        python preprocessing_real_geography.py -c /pp_config/example_config_file.yml 
        ```
-  4) Use the prepocessed example SPCESM2 data from zenodo or your own preprocessed SPCESM2 data for training all models 
+  4) Use the prepocessed example SPCESM2 data from zenodo or your own preprocessed SPCESM2 data for training all models
+      
      4.1) Train all networks:
        The repective training files of individual ANNs can be found in the folders:   models/offline_models/ANNs_lin/ANN_*
        The repective training files of individual VEDs can be found in the folders:   models/offline_models/VEDs/VED_*
@@ -135,6 +137,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
   2) Fork the dedicated [Github repository](https://github.com/SciPritchardLab/CESM2-ML-coupler) and clone it on the HPC
   3) Adjust compilers of CESM2 to the used HPC
   4) Copy models/online_models folder containing FKB.txt files of ANNs and normalization files to HPC
+     
      4.1) If you want to use your trained ANNs, please use models/online_models/fkb_keras_convert.py to convert .h5 files into .txt files for FKB ([Fortran-Keras-Bridge](https://github.com/scientific-computing/FKB))
         ```
         python fkb_keras_convert --weights_file ANN_*.h5 --output_file ANN_*.txt
@@ -161,7 +164,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
 
   9) Run the dedicated Jupyter notebooks of the online_evaluation folder based on the output of the simulations of CESM2 with the ML and tradional schemes
 
-## License
+## License:
 
 This code is released under MIT License. See [LICENSE](https://github.com/EyringMLClimateGroup/behrens24james_SPCESM2_ML_ensembles/blob/main/LICENSE) for more information.
 
