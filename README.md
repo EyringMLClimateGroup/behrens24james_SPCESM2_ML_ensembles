@@ -134,7 +134,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
 ### Online strategy (HPC system needed):
 
 
-  1) Clone the [Fortran-Keras-Bridge](https://github.com/scientific-computing/FKB)(FKB): [https://github.com/scientific-computing/FKB]([https://github.com/scientific-computing/FKB])
+  1) Clone the [Fortran-Keras-Bridge](https://github.com/scientific-computing/FKB)(FKB): [https://github.com/scientific-computing/FKB](https://github.com/scientific-computing/FKB)
   2) Download and compile CESM=2.1.3 from [GitHub](https://github.com/ESCOMP/CESM/releases/tag/release-cesm2.1.3) on HPC
   3) Fork the dedicated [Github repository](https://github.com/SciPritchardLab/CESM2-ML-coupler) and clone it on the HPC, please read the quickstart guide of the repo!
   4) Adjust compilers of CESM2 to the used HPC
