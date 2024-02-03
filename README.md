@@ -35,7 +35,7 @@ The modified earth system model code is available at https://github.com/SciPritc
 
 
 
-## Repository description
+## Repository description:
 
 The main components of the repository are:
 
