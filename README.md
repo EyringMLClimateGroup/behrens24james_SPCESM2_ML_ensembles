@@ -133,19 +133,21 @@ To reproduce the analysis and the results shown in this repository two conda / m
 
 ### Online strategy (HPC system needed):
 
-  1) Download and compile CESM=2.1.3 from [GitHub](https://github.com/ESCOMP/CESM/releases/tag/release-cesm2.1.3) on HPC
-  2) Fork the dedicated [Github repository](https://github.com/SciPritchardLab/CESM2-ML-coupler) and clone it on the HPC
-  3) Adjust compilers of CESM2 to the used HPC
-  4) Copy models/online_models folder containing FKB.txt files of ANNs and normalization files to HPC
+
+  1) Clone the ([Fortran-Keras-Bridge](https://github.com/scientific-computing/FKB)): [https://github.com/scientific-computing/FKB]([https://github.com/scientific-computing/FKB])
+  2) Download and compile CESM=2.1.3 from [GitHub](https://github.com/ESCOMP/CESM/releases/tag/release-cesm2.1.3) on HPC
+  3) Fork the dedicated [Github repository](https://github.com/SciPritchardLab/CESM2-ML-coupler) and clone it on the HPC, please read the quickstart guide of the repo!
+  4) Adjust compilers of CESM2 to the used HPC
+  5) Copy models/online_models folder containing FKB.txt files of ANNs and normalization files to HPC
      
-     4.1) If you want to use your trained ANNs, please use `models/online_models/fkb_keras_convert.py` to convert .h5 files into .txt files for FKB ([Fortran-Keras-Bridge](https://github.com/scientific-computing/FKB))
+     5.1) If you want to use your trained ANNs, please use `models/online_models/fkb_keras_convert.py` to convert .h5 files into .txt files for FKB 
         ```
         python fkb_keras_convert --weights_file ANN_*.h5 --output_file ANN_*.txt
         ```
      
-  5) Copy Fortran run scipts in folder online_run_scripts to HPC
-  6) Copy SPCESM2 initilization files to HPC
-  7) Run CESM2 with the exmaple run scripts for indivudal ANNs and ensembles
+  6) Copy Fortran run scipts in folder online_run_scripts to HPC
+  7) Copy SPCESM2 initilization files to HPC
+  8) Run CESM2 with the exmaple run scripts for indivudal ANNs and ensembles
      
      example:
      
@@ -159,10 +161,10 @@ To reproduce the analysis and the results shown in this repository two conda / m
 
 
 
-  8) Run the benchmark simulation of CESM2.1.3 with the Zhang-McLane convection scheme and the SP
+  9) Run the benchmark simulation of CESM2.1.3 with the Zhang-McLane convection scheme and the SP
      For SP the example run scripts can be used by commenting out the coupled variables of the ML scheme in the run scripts, then SP is fully used.
 
-  9) Run the dedicated Jupyter notebooks of the `online_evaluation` folder based on the output of the simulations of CESM2 with the ML and tradional schemes
+  10) Run the dedicated Jupyter notebooks of the `online_evaluation` folder based on the output of the simulations of CESM2 with the ML and tradional schemes
 
 ## License:
 
