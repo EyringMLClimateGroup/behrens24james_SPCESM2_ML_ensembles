@@ -75,7 +75,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
    - tensorflow=1.13.1 [https://github.com/tensorflow/tensorflow/releases/tag/v1.13.1](https://github.com/tensorflow/tensorflow/releases/tag/v1.13.1)
    - dask==2.1.0 [https://github.com/dask/dask/releases/tag/2.1.0](https://github.com/dask/dask/releases/tag/2.1.0)
    - keras==2.2.4 [https://github.com/keras-team/keras/releases/tag/2.2.4](https://github.com/keras-team/keras/releases/tag/2.2.4)
-   - xarray==0.12.2 [https://github.com/pydata/xarray/releases/tag/v0.12.2]([https://github.com/pydata/xarray/releases/tag/v0.12.2)
+   - xarray==0.12.2 [https://github.com/pydata/xarray/releases/tag/v0.12.2](https://github.com/pydata/xarray/releases/tag/v0.12.2)
   
   To enable a full functionality of the .cbrain code for preprocessing SPCESM2 data the use of the entire preprocessing environment is recommended. 
 
