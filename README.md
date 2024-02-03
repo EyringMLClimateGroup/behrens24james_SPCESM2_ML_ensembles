@@ -63,7 +63,7 @@ The main components of the repository are:
 2) The entire set of SPCESM2 raw data, preprocessed SPCESM2 data and more SPCESM2 initilization files for different months of 2013 is archived on Levante/DKRZ and available upon request.
    This allows to reproduce all figures and all results of the SPCESM2-ML ensemble paper. In this case an account on [DKRZ/Levante](https://docs.dkrz.de/) is needed.
 
-## Figures
+## Figures:
 
 A completed list of all figures of the above mentioned paper and the related path in the repository can be found [here](https://github.com/EyringMLClimateGroup/behrens24james_SPCESM2_ML_ensembles/blob/main/List_of_Figures.txt).
 
