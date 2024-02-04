@@ -120,7 +120,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
        For the training you need the preprocessed training, validation, test, normalization datasets and 1 single .nc file of SPCESM2 raw data to detrmine the vertical coordinate of the SPCESM2 model (variables hyai, hybi):
 
        ```
-       python training file
+       python training_file.py
        ```
      4.2) Transform all keras models with the conversion jupyter notebooks (`*conversion*.py`) into pytorch models (pytorch will be used for the rest of the offline evaluation)
 
