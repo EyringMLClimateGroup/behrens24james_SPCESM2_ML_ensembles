@@ -117,7 +117,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
        The respective training files of individual VEDs can be found in the folders:   `models/offline_models/VEDs/VED_*`
        The respective training files of ANN_dropout can be found in the folders:  `models/offline_models/ANN_dropout`
 
-       For the training you need the preprocessed training, validation, test, normalization datasets and 1 single .nc file of SPCESM2 raw data to detrmine the vertical coordinate of the SPCESM2 model (variables hyai, hybi):
+       For the training you need the preprocessed training, validation, test, normalization datasets and 1 single .nc file of SPCESM2 raw data to determine the vertical coordinate of the SPCESM2 model (variables hyai, hybi):
 
        ```
        python training_file.py
@@ -145,7 +145,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
         python fkb_keras_convert --weights_file ANN_*.h5 --output_file ANN_*.txt
         ```
      
-  6) Copy Fortran run scipts in folder online_run_scripts to HPC
+  6) Copy Fortran run scipts from folder online_run_scripts to HPC
   7) Copy SPCESM2 initilization files to HPC
   8) Run CESM2 with the exmaple run scripts for indivudal ANNs and ensembles
      
@@ -154,7 +154,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
      ```
      ./run_cesm2_frontera2.batch.partial-coupling.csh ANN_1 2013-02-01 
      ```
-     use this in csh shell, the first command sets the runscript, the second one the used ANN in this case, the third one the initilization data of CESM2 run
+     use this in csh shell, the first command sets the runscript, the second one the used ANN in this case, the third one the initilization date of CESM2 run
 
      To enable an efficient parallelization on the HPC the use of e.g, parallel is recommented [https://www.gnu.org/software/parallel/](https://www.gnu.org/software/parallel/).
 
