@@ -12,9 +12,6 @@ Thank you for checking out our SPCESM2-ML ensembles repository, dedicated to bui
 
 The current release of SPCESM2-ML ensemble on zenodo can be found here (to be updated): 
 
-[![DOI](https://zenodo.org/badge/227609774.svg)](https://zenodo.org/badge/latestdoi/227609774)
-
-
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10614978.svg)](https://doi.org/10.5281/zenodo.10614978)
 
