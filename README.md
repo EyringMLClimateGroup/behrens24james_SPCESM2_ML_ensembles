@@ -16,6 +16,10 @@ The current release of SPCESM2-ML ensemble on zenodo can be found here (to be up
 
 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10614978.svg)](https://doi.org/10.5281/zenodo.10614978)
+
+
+
 
 
 For a sample of the SPCESM data, prepocessed data and initilization files of CESM2 used, click here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10598576.svg)](https://doi.org/10.5281/zenodo.10598576)
