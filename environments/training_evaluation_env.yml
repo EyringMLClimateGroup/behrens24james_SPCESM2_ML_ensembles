@@ -323,7 +323,6 @@ dependencies:
     - gpy==1.10.0
     - gpyopt==1.2.6
     - itsdangerous==2.1.2
-    - parameter-sherpa==1.0.6
     - paramz==0.9.5
     - pymongo==4.1.1
 prefix: /home/b/b309162/.conda/envs/lightning_gpu_V_pytorch
