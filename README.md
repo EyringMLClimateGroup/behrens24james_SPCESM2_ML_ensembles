@@ -1,4 +1,4 @@
-# SPCESM2-ML ensemble - stochastic and deterministic ML ensembles in the SPCESM2 framework 
+# SPCESM2-ML ensemble - stochastic and multi-member ML paremeterizations in the SPCESM2 framework 
 
 
 
@@ -8,7 +8,7 @@ This repository uses parts of the code from the CBRAIN repository of Stephan Ras
 
 Main Repository Author: Stephan Rasp - <raspstephan@gmail.com> - https://raspstephan.github.io
 
-Thank you for checking out our SPCESM2-ML ensembles repository, dedicated to building stochastic and deterministic ensembles for learning convective processes in SPCESM2. A quick-start notebook to use the SPCAM or SPCESM2 data can be found here: https://github.com/raspstephan/CBRAIN-CAM/blob/master/quickstart.ipynb
+Thank you for checking out our SPCESM2-ML ensembles repository, dedicated to building stochastic and multi-member parameterizations for learning convective processes in SPCESM2. A quick-start notebook to use the SPCAM or SPCESM2 data can be found here: https://github.com/raspstephan/CBRAIN-CAM/blob/master/quickstart.ipynb
 
 The current release of SPCESM2-ML ensemble on zenodo can be found here (to be updated): 
 
@@ -41,15 +41,15 @@ The modified earth system model code is available at https://github.com/SciPritc
 The main components of the repository are:
 
 - `cbrain`: Contains the cbrain module with all code to preprocess the raw data, run the neural network experiments and analyze the data based on Stephan Rasp repository (https://github.com/raspstephan/CBRAIN-CAM).
-- `models`: Contains all files need to build the ensemble parameterization. All weight, training, history files of individual machine learning algorithms (Artificial Neural Networks (ANNs), Variational Encoder Decoders, an ANN with dropout) can be found  in the subfolder `offline_models`. The subfolder `online_models`  contains all necessary model files to conduct online experiments with CESM2.
+- `models`: Contains all files need to build the stochastic and multi-member parameterization. All weight, training, history files of individual machine learning algorithms (Artificial Neural Networks (ANNs), Variational Encoder Decoders, an ANN with dropout) can be found  in the subfolder `offline_models`. The subfolder `online_models`  contains all necessary model files to conduct online experiments with CESM2.
 - `environments`: Contains the .yml files of the conda environments used for this repository 
 - `pp_config`: Contains configuration files and shell scripts to preprocess the eart system model data to be used as neural network inputs
-- `CRPS_analysis`: Contains files to evaluate the ensembles based on the Continous Rank Probabilty Score (CRPS)
-- `deterministic_analysis`: Contains files to evaluate the ensembles based on coefficient of determination (R2) and mean absolute error (MAE)
+- `CRPS_analysis`: Contains files to evaluate the stochastic and multi-member parameterization based on the Continous Rank Probabilty Score (CRPS)
+- `deterministic_analysis`: Contains files to evaluate the stochastic and multi-member parameterization based on coefficient of determination (R2) and mean absolute error (MAE)
 - `latent_perturbation_tuning`: Contains files that are necessary to adjust the magnitude of the latent space perturbation of Variational Encoder Decoders.
 - `online_evaluation`: Contains the files that were used to evaluate the skill of the hybrid simulations with CESM2. 
 - `online_run_scripts`: Contains example run scripts of CESM2 with machine learning parameterizations. These were created in collaboration with Sungduk Yu. 
-- `uncertainty_quantification`: Contains files to evaluate the quality of the ensembles with repect to uncertainty quantification (UQ). It includes code that is based on the published repository for UQ of Cathy Haynes and Ryan Lagerqvist. 
+- `uncertainty_quantification`: Contains files to evaluate the quality of the stochastic and multi-member parameterization with repect to uncertainty quantification (UQ). It includes code that is based on the published repository for UQ of Cathy Haynes and Ryan Lagerqvist. 
 - `preprocessing_real_geography.py`: Is the related python code to preprocess raw SPCESM2 data into .nc files that can be used with the cbrain repository of Stephan Rasp.  
 - `List_of_Figures.txt`: Contains a description where to find the python code to reproduce the figures of the SPCESM2-ML ensemble paper
 
@@ -59,7 +59,7 @@ The main components of the repository are:
 1) A set of SPCESM2 data can be found on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10598576.svg)](https://doi.org/10.5281/zenodo.10598576)
    - It contains a subset of the preprocessed training data (first day of each month of 2013), validation data (first day of each month of 2014) and test data (first day of each of 2015) that is used in the SPCESM2-ML ensemble paper.
    - It includes a folder with SPCESM2 raw data consisting of .nc files from January 1st 2013.
-   - It includes a folder with initilization files of SPCESM2 for January 2013 and Febrauary 2013, that can be used to run hybrid CESM2 simulations with the here developed ML ensembles.
+   - It includes a folder with initilization files of SPCESM2 for January 2013 and Febrauary 2013, that can be used to run hybrid CESM2 simulations with the here developed ML multi-member parameterization.
 
 2) The entire set of SPCESM2 raw data, preprocessed SPCESM2 data and more SPCESM2 initilization files for different months of 2013 is archived on Levante/DKRZ and available upon request.
    This allows to reproduce all figures and all results of the SPCESM2-ML ensemble paper. In this case an account on [DKRZ/Levante](https://docs.dkrz.de/) is needed.
@@ -97,6 +97,20 @@ To reproduce the analysis and the results shown in this repository two conda / m
   ```
   mamba env create -f training_evaluation_env.yml
   ```
+  
+3) The revision ocean and land environment (revision_ocean_land_environment.yml) is based on the training and evaluation environment.
+   As add-on it contains the matplotlib basemap toolkit that allows to mask and select ocean or land grid cell.
+   In this environment we use this version of basemap:
+   
+   - basemap=1.4.1 [https://github.com/matplotlib/basemap/tree/v1.4.1)
+   
+    To enable a full functionality of the land and ocean analysis for the revisions the revision ocean and land environment is recommended. 
+
+  ```
+  mamba env create -f revision_ocean_land_environment.yml
+  ```
+   
+
 
 ## Strategy for the reproduction of the results of the paper and the repository:
 
@@ -127,7 +141,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
 
        
   5) Run the deterministic_analysis Jupyter notebooks with all trained networks, here you need again the test data sets
-     5.1) For the VED-varying ensemble please use VED_1 and the alpha_1.npy array that can be found in folder `latent_perturbation_tuning`
+     5.1) For the VED-varying stochastic parameterization please use VED_1 and the alpha_1.npy array that can be found in folder `latent_perturbation_tuning`
      
   6) Run the uncertainty_quantification Jupyter notebooks (again use VED_1 and alpha_1 forr VED_varying)
   7) Run the CRPS_analysis notebooks
@@ -148,7 +162,7 @@ To reproduce the analysis and the results shown in this repository two conda / m
      
   6) Copy Fortran run scipts from folder online_run_scripts to HPC
   7) Copy SPCESM2 initilization files to HPC
-  8) Run CESM2 with the exmaple run scripts for indivudal ANNs and ensembles
+  8) Run CESM2 with the exmaple run scripts for individual ANNs and multi-member parameterizations
      
      example:
      
