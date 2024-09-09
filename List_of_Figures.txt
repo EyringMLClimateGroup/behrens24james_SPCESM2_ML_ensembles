@@ -7,7 +7,7 @@ Fig. 2: Median coefficient of determination R² and related differences of the v
 Fig. 3: Spread-Skill figure for specific humidity tendency, temperature tendency of different stoachstic and multi-member parameterization --> uncertainty_quantification/real_geo_Spread_skill_diagrams_all_networks_updt.ipynb
 Fig. 4: Probability Integral Transform diagram of different parameterizations for cloud liquid water tendency in the planetary boundary layer   --> uncertainty_quantification/real_geo_PIT_composite_all_networks_updt.ipynb
 Fig. 5: Mean continous rank probability score of parameterizations for the 4 vertical tendency profiles  --> CRPS_analysis/real_geo_CRPS_overview_updt.ipynb
-Fig. 6: Latitutude - Longitude Map of CRPS of different parameterizations for cloud ice water tendency in the upper troposphere --> CRPS_analysis/real_geo_CRPS_lat_lon_plots.ipynb
+Fig. 6: Latitude - Longitude Map of CRPS of different parameterizations for cloud ice water tendency in the upper troposphere --> CRPS_analysis/real_geo_CRPS_lat_lon_plots.ipynb
 Fig. 7: Simulated zonal average of precipitation percentiles and histogram of different parameterizations in CESM2 simulations and related observations --> online_evaluation/global_analysis_online_ANN_lin_boost_precip_updt.ipynb
 Fig. 8: Latitude-Longitude plots of peak of diurnal precipitation in Local Solar Time for  CESM2 simulations with parameterizations or observations --> online_evaluation/global_analysis_online_ANN_lin_boost_precip_updt.ipynb
 
@@ -80,4 +80,5 @@ Fig. S47: Global maps of the simulated or observed median precipitation for the 
 Fig. S48: Precipitation histograms of different parameterizations in simulations of CESM2 and GPM observation for the period Februay to May 2013  --> online_evaluation/global_analysis_online_ANN_lin_boost_precip_updt.ipynb
 Fig. S49: Selected regions for diurnal cycle analysis of precipitation in simulations of CESM2 and GPM observation --> online_evaluation/global_analysis_online_ANN_lin_boost_precip_updt.ipynb
 Fig. S50: Diurnal cycle of precipitation in selected regions in simulations of CESM2 and GPM observation for the period Februay to May 2013 --> online_evaluation/global_analysis_online_ANN_lin_boost_precip_updt.ipynb
-
+Fig. S51: Latitude - Longtitude maps of interquartile range between 75th and 25th percentile for dot q, dot T, snow and precip rate for February 2013 --> online_evaluation/Pseudo_Online_uncertainties_february.ipynb
+Fig. S52: Zonal Averages of interquartile range between 75th and 25th percentile for vertical profiles of dot q, dot T for February 2013 --> online_evaluation/Pseudo_Online_uncertainties_february.ipynb
