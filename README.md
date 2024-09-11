@@ -14,7 +14,7 @@ The current release of SPCESM2-ML ensemble on zenodo can be found here:
 
 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13748378.svg)](https://doi.org/10.5281/zenodo.13748378)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13748377.svg)](https://doi.org/10.5281/zenodo.13748377)
 
 
 
