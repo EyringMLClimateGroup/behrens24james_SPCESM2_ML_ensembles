@@ -10,10 +10,12 @@ Main Repository Author: Stephan Rasp - <raspstephan@gmail.com> - https://raspste
 
 Thank you for checking out our SPCESM2-ML ensembles repository, dedicated to building stochastic and multi-member parameterizations for learning convective processes in SPCESM2. A quick-start notebook to use the SPCAM or SPCESM2 data can be found here: https://github.com/raspstephan/CBRAIN-CAM/blob/master/quickstart.ipynb
 
-The current release of SPCESM2-ML ensemble on zenodo can be found here (to be updated): 
+The current release of SPCESM2-ML ensemble on zenodo can be found here: 
 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10614978.svg)](https://doi.org/10.5281/zenodo.10614978)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13748378.svg)](https://doi.org/10.5281/zenodo.13748378)
+
 
 
 
